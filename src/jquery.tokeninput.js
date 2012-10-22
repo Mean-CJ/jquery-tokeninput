@@ -16,7 +16,7 @@ var DEFAULT_SETTINGS = {
     queryParam: "q",
     searchDelay: 300,
     minChars: 1,
-    propertyToSearch: "qn",
+    propertyToSearch: "name",
     jsonContainer: null,
     contentType: "json",
 
@@ -25,12 +25,12 @@ var DEFAULT_SETTINGS = {
     processPrePopulate: false,
 
     // Display settings
-    hintText: null,
-    noResultsText: null,
-    searchingText: null,
+    hintText: "Type in a search term",
+    noResultsText: "No results",
+    searchingText: "Searching...",
     deleteText: "&times;",
-    animateDropdown: false,
-    theme: 'ww',
+    animateDropdown: true,
+    theme: null,
     zindex: 999,
     resultsLimit: null,
 
@@ -49,11 +49,11 @@ var DEFAULT_SETTINGS = {
     // Tokenization settings
     tokenLimit: null,
     tokenDelimiter: ",",
-    preventDuplicates: true,
+    preventDuplicates: false,
     tokenValue: "id",
 
     // Behavioral settings
-    allowFreeTagging: true,
+    allowFreeTagging: false,
 
     // Callbacks
     onResult: null,
